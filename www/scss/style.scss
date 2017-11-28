@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+    
+    .dg.ac {
+        transition: opacity .35s;
+    }
+    
+    .dg li.title {
+        background-color: #1a1a1a;
+    }
+    
+    canvas {
+        cursor: default;
+        
+        &:active ~ .dg.ac {
+            opacity: .2;
+            pointer-events: none;
+        }
+    }
+    
+    li, .close-button {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+}
